@@ -3,7 +3,6 @@ import User from '../models/User'
 import { startOfDay, endOfDay, parseISO } from 'date-fns'
 
 import { Op } from 'sequelize'
-
 class ScheduleController {
   async index (req, res) {
     const checkUserProvider = await User.findOne({
